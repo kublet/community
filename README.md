@@ -4,7 +4,7 @@
 
 Community is a platform for users of Kublet to publish their apps for the Kublet community to download and use for their kublet device.
 
-![softlight](https://github.com/kublet/community/assets/4488777/04e1961f-447a-4dcb-a7ce-622f9d432fd5)
+![softlight_trim](https://github.com/kublet/community/assets/4488777/83a3d8a6-d340-4569-9ca0-3136d5fb2bb0)
 
 ## Requirements
 
