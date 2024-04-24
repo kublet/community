@@ -22,4 +22,26 @@ Community is a platform for users of Kublet to publish their apps for the Kublet
 4. Make, commit and push your changes
 5. Submit PR
 
-Follow instructions [here](https://developers.thekublet.com/docs/publishing/how-to/).
+See more guidelines on the review process [here](https://developers.thekublet.com/docs/publishing/how-to/).
+
+### Fork
+
+![fork_large](https://github.com/kublet/community/assets/4488777/8e6e4bf8-252e-4d60-a2ce-9604fcefcb78)
+
+### Build
+
+![build_v2](https://github.com/kublet/community/assets/4488777/77d7cf18-421d-46e1-a48a-6f684776a09d)
+
+### Publish 
+
+![publish](https://github.com/kublet/community/assets/4488777/b8beee04-1284-4d4a-8853-da1893e66e48)
+
+### Submit PR
+
+```bash
+$ git push origin <branch-name>
+```
+
+### What to include in PR
+
+See [docs](https://developers.thekublet.com/docs/publishing/how-to/#what-to-include).
