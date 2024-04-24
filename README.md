@@ -30,6 +30,10 @@ https://github.com/kublet/community/assets/4488777/a1517d8b-8df9-49ff-8912-af6ff
 
 ### Build
 
+Note: You need PIO CLI in order to build krates on the command line. You can either download it via VS Code and install the PIO extension, or [install](https://docs.platformio.org/en/latest/core/installation/methods/index.html) it separately.  
+
+We recommended using VS Code/PIO IDE for development, but in demo videos below we will demonstrate how to develop krates entirely in the terminal for a quick overview of our contribution process.
+
 https://github.com/kublet/community/assets/4488777/44354c7e-a5a1-4c7c-940c-2647c8bf59c6
 
 https://github.com/kublet/community/assets/4488777/d1da896e-d63d-404a-9101-1d5e1c4d301a
