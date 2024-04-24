@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #b3b3b3;
+        font-size: 60.06px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 72.07px;
+      }
+
+      .cls-3, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: lime;
+      }
+
+      .cls-7 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient);
+        stroke: lime;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-8 {
+        font-family: ArialMT, Arial;
+        font-size: 252.24px;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="512" cy="512" fx="512" fy="512" r="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <clipPath id="clippath">
+      <rect class="cls-6" x="72.95" y="271.62" width="864.45" height="396.37"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="633.8" y1="285.64" x2="633.8" y2="668.46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="lime"/>
+      <stop offset="1" stop-color="lime" stop-opacity=".1"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-7" width="1024" height="1024"/>
+      <text class="cls-3" transform="translate(69.26 129.53)"><tspan x="0" y="0">AAP</tspan><tspan class="cls-1" x="152.16" y="0">L</tspan></text>
+      <text class="cls-2" transform="translate(69.26 202.09)"><tspan x="0" y="0">Apple Inc</tspan></text>
+      <text class="cls-8" transform="translate(51.78 933.41)"><tspan x="0" y="0">192.87</tspan></text>
+      <text class="cls-4" transform="translate(771.01 129.53)"><tspan x="0" y="0">+3.96</tspan></text>
+      <g class="cls-5">
+        <path class="cls-9" d="M74.77,668.46c6.09-19.49,24.79-71.84,68.23-104.44,22.8-17.12,49.67-26.73,53.7-28.15,17.38-6.1,31.49-8.38,41.86-10.01,15.59-2.45,16.23-.85,31.21-2.7,20.03-2.48,40.5-5.02,59.79-17.32,10.13-6.46,8.37-8.24,30.71-29.91,21.44-20.79,31.98-31.54,43.91-38.16,31.36-17.4,63.84-12.49,80.08-10.01,39.46,6.03,38.13,20.78,81.9,28.03,22.7,3.76,52.97,8.77,74.57-8.4,5.83-4.63,18.82-17.08,27.41-25.3,9.41-9.01,13.06-13.08,18.44-18.08,18.04-16.75,33.32-28.84,44.26-37.46,21.66-17.07,32.98-25.98,50.59-36.48,18.13-10.8,36.46-21.73,64.81-30.56,14.13-4.4,56.8-17.26,112.46-13.05,43.87,3.32,74.12,15.44,85.29,20.31,63.4,27.62,89.75,72.15,108.55,116.05,5.65,13.19,11.55,28.5,17.07,45.89,23.17,72.98,23.19,172.99,23.25,197.81"/>
+      </g>
+    </g>
+  </g>
+</svg>
