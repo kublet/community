@@ -1,0 +1,4 @@
+summary: random activity for bored people
+desc: displayed a random activity from the bored API every 10 mins
+author: Audrey
+configs:
