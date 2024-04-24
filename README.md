@@ -26,15 +26,17 @@ See more guidelines on the review process [here](https://developers.thekublet.co
 
 ### Fork
 
-![fork_large](https://github.com/kublet/community/assets/4488777/8e6e4bf8-252e-4d60-a2ce-9604fcefcb78)
+https://github.com/kublet/community/assets/4488777/a1517d8b-8df9-49ff-8912-af6ffe818f43
 
 ### Build
 
-![build_v2](https://github.com/kublet/community/assets/4488777/77d7cf18-421d-46e1-a48a-6f684776a09d)
+https://github.com/kublet/community/assets/4488777/44354c7e-a5a1-4c7c-940c-2647c8bf59c6
+
+https://github.com/kublet/community/assets/4488777/d1da896e-d63d-404a-9101-1d5e1c4d301a
 
 ### Publish 
 
-![publish](https://github.com/kublet/community/assets/4488777/b8beee04-1284-4d4a-8853-da1893e66e48)
+https://github.com/kublet/community/assets/4488777/373dde9a-9450-4ff4-8df1-39072f609742
 
 ### Submit PR
 
