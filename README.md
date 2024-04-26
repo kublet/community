@@ -8,13 +8,18 @@ Community is a platform for users of Kublet to publish their apps for the Kublet
 
 ## Requirements
 
-- WiFi
 - Krate CLI
-- Visual Studio Code
-- PlatformIO (PIO)
+- Visual Studio Code with PIO extension
 - Kublet
 
-Follow this [guide](https://developers.thekublet.com/docs/installation/installation/) to install.
+**MacOS**
+
+```bash
+brew tap kublet/tools
+brew install krate 
+```
+
+This README is meant to provide an overview of the process of contributing to community. See our developers [guide](https://developers.thekublet.com/docs/installation/installation/) for full installation steps.
 
 ## Getting Started
 
@@ -24,52 +29,40 @@ Follow this [guide](https://developers.thekublet.com/docs/installation/installat
 4. Make, commit and push your changes
 5. Submit PR
 
-See more guidelines on the review process [here](https://developers.thekublet.com/docs/publishing/how-to/).
+[Detailed guide](https://developers.thekublet.com/docs/publishing/how-to/).
 
-### Fork and clone
+### Fork, clone, and create
 
-```bash
-git clone git@github.com:kublet/community.git
-```
-
-https://github.com/kublet/community/assets/4488777/a1517d8b-8df9-49ff-8912-af6ffe818f43
-
-### Build
-
-**Initialize a new project**
+After forking this repository, clone the fork and create a new project.
 
 ```bash
+git clone git@github.com:<your-gh-username>/community.git
 cd community/krates
 git checkout -b <proj-name>
 krate init <proj-name>
-cd proj-name
 ```
 
-https://github.com/kublet/community/assets/4488777/44354c7e-a5a1-4c7c-940c-2647c8bf59c6
+https://github.com/kublet/community/assets/4488777/4a016891-8ffc-4b83-af7e-d5ee9a7e9ff7
 
 **Develop**
 
-Open your project in VS Code.
+Open your project in VS Code and start developing.
 
-In the terminal, use our krate CLI to build and flash your code. 
-
-```bash
-krate build
-krate send <ip-addr> 
-```
-https://github.com/kublet/community/assets/4488777/bd0986a6-5f56-4687-b87a-07da803d042f
+https://github.com/kublet/community/assets/4488777/713d9131-ccca-4250-9778-4c1920fcd5a7
 
 ### Publish 
+
+Before submitting your PR, run the following:
 
 ```bash
 krate publish
 ```
 
-https://github.com/kublet/community/assets/4488777/373dde9a-9450-4ff4-8df1-39072f609742
+https://github.com/kublet/community/assets/4488777/a5625629-8b75-4135-9970-3aa5e26cdbee
 
 ### Submit PR
 
-Go to the local root directory of the cloned community repo. 
+Go to the local root directory of the cloned fork. 
 
 ```bash
 cd /path/to/community/
