@@ -2,7 +2,7 @@
 
 [![Docs](https://img.shields.io/badge/docs-developers.thekublet-blue?style=flat-square)](https://developers.thekublet.com)
 
-Community is a platform for users of Kublet to publish their apps for the Kublet community to download and use for their kublet device.
+Community is a platform for users of Kublet to publish their apps for the Kublet community to download and use for their [kublet device](https://thekublet.com).
 
 ![softlight_trim](https://github.com/kublet/community/assets/4488777/83a3d8a6-d340-4569-9ca0-3136d5fb2bb0)
 
@@ -36,10 +36,6 @@ https://github.com/kublet/community/assets/4488777/a1517d8b-8df9-49ff-8912-af6ff
 
 ### Build
 
-Note: You need PIO CLI in order to build krates on the command line. You can either download it via VS Code and install the PIO extension, or [install](https://docs.platformio.org/en/latest/core/installation/methods/index.html) it separately.  
-
-We recommended using VS Code/PIO IDE for development, but the in demo videos below we will demonstrate how to develop krates entirely in the terminal for a quick overview of our process.
-
 **Initialize a new project**
 
 ```bash
@@ -53,15 +49,15 @@ https://github.com/kublet/community/assets/4488777/44354c7e-a5a1-4c7c-940c-2647c
 
 **Develop**
 
-In your krate project folder, use our krate CLI to build and flash your code. 
+Open your project in VS Code.
+
+In the terminal, use our krate CLI to build and flash your code. 
 
 ```bash
-krate deps install
 krate build
 krate send <ip-addr> 
 ```
-
-https://github.com/kublet/community/assets/4488777/d1da896e-d63d-404a-9101-1d5e1c4d301a
+https://github.com/kublet/community/assets/4488777/bd0986a6-5f56-4687-b87a-07da803d042f
 
 ### Publish 
 
@@ -76,7 +72,7 @@ https://github.com/kublet/community/assets/4488777/373dde9a-9450-4ff4-8df1-39072
 Go to the local root directory of the cloned community repo. 
 
 ```bash
-cd ../..
+cd /path/to/community/
 git add .
 git commit -m "Add boredd krate"
 git push origin <branch-name>
