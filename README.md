@@ -37,7 +37,7 @@ After forking this repository, clone the fork and create a new project.
 
 ```bash
 git clone git@github.com:<your-gh-username>/community.git
-cd community/krates
+cd community/apps
 git checkout -b <proj-name>
 krate init <proj-name>
 ```
@@ -67,7 +67,7 @@ Go to the local root directory of the cloned fork.
 ```bash
 cd /path/to/community/
 git add .
-git commit -m "Add boredd krate"
+git commit -m "Add boredd app"
 git push origin <branch-name>
 ```
 
