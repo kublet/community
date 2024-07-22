@@ -1,11 +1,9 @@
-
 #include <Arduino.h>
 #include <otaserver.h>
 #include <kgfx.h>
 
 OTAServer otaserver;
 KGFX ui;
-Preferences preferences;
 
 void setup() {
   Serial.begin(460800);
@@ -16,7 +14,20 @@ void setup() {
 
   ui.init();
   ui.clear();
-  ui.drawText("hello", Arial_28, TFT_YELLOW, 0, 0);
+
+  ui.tft.setTTFFont(Arial_24_Bold);
+  ui.tft.setTextColor(TFT_BLUE, TFT_BLACK);
+  const char *helloTxt = "Hello";
+  int w = ui.tft.TTFtextWidth(helloTxt);
+  ui.tft.setCursor((240-w)/2,20);
+  ui.tft.print(helloTxt);
+
+  ui.tft.setTTFFont(Arial_24_Bold);
+  ui.tft.setTextColor(TFT_BLUE, TFT_BLACK);
+  const char *txt = "Your text here";
+  int w2 = ui.tft.TTFtextWidth(txt);
+  ui.tft.setCursor((240-w2)/2,100);
+  ui.tft.print(txt);
 }
 
 void loop() {
