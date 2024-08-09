@@ -10,16 +10,22 @@
 // The default port of the Icinga 2 API is 5665, so the URL to go with would be like: https://myicingaserver.com:5665
 // Requires the following API permission(s): status/query
 // Read more about Icinga 2 API Setup: https://icinga.com/docs/icinga-2/latest/doc/12-icinga2-api/
-String icingaAPIURL = "https://hostname:5665";
-String icingaAPIUsername = "username";
-String icingaAPIPassword = "password";
+preferences.begin("app", true);
+// String icingaAPIURL = "https://hostname:5665";
+// String icingaAPIUsername = "username";
+// String icingaAPIPassword = "password";
+icingaAPIURL = preferences.getString("icinga_url");
+icingaAPIUsername = preferences.getString("icinga_username");
+icingaAPIPassword = preferences.getString("icinga_password");
+preferences.end();
 int refreshTimeInSeconds = 60;
 // -- CONFIGURATION
 
 OTAServer otaserver;
 KGFX ui;
 unsigned long lastTime = 0;
-TFT_eSprite textSpr = ui.createSprite(240, 240);
+bool authFailed = false;
+TFT_eSprite textSpr = ui.createSpriteLarge(240, 240);
 HTTPClient http;
 JsonDocument json;
 
@@ -32,8 +38,6 @@ void setup() {
 
   ui.init();
   ui.clear();
-  textSpr.setColorDepth(8);
-  textSpr.fillSprite(TFT_BLACK);
 }
 
 void loop() {
@@ -41,6 +45,10 @@ void loop() {
     otaserver.handle(); // DO NOT EDIT
 
     if (((millis() - lastTime) > refreshTimeInSeconds*1000) || lastTime == (unsigned long)(0)) {
+      if (authFailed) {
+        return;
+      }
+
       lastTime = millis();
       http.setUserAgent("kublet-icinga");
       http.setAuthorization(icingaAPIUsername.c_str(), icingaAPIPassword.c_str());
@@ -54,6 +62,7 @@ void loop() {
 
       if (httpResponseCode != HTTP_CODE_OK) {
         ui.drawText(textSpr, "HTTP Error: Probably using wrong API credentials.", Arial_14_Bold, TFT_RED, 0, 0);
+        authFailed = true;
         return;
       }
 
