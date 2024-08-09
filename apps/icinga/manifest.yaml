@@ -1,0 +1,13 @@
+summary: Display Icinga Host + Service Status
+desc: Retrieves and displays host + service status overview via Icinga 2 API
+author: Daniel Schmitz
+configs:
+  id: icinga_url
+  name: Icinga 2 API URL (eg. https://your.icinga.host:5665)
+  type: text
+  id: icinga_username
+  name: Icinga 2 API Username
+  type: text
+  id: icinga_password
+  name: Icinga 2 API Password
+  type: text
