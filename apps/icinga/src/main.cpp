@@ -37,9 +37,9 @@ void setup() {
   // icingaAPIURL = "https://hostname:5665";
   // icingaAPIUsername = "username";
   // icingaAPIPassword = "password";
-  String icingaAPIURL = preferences.getString("icinga_url");
-  String icingaAPIUsername = preferences.getString("icinga_username");
-  String icingaAPIPassword = preferences.getString("icinga_password");
+  icingaAPIURL = preferences.getString("icinga_url");
+  icingaAPIUsername = preferences.getString("icinga_username");
+  icingaAPIPassword = preferences.getString("icinga_password");
   preferences.end();
 
   ui.init();
